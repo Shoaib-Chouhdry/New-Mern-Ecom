@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { ShoppingViewHeaderMenuItems } from "../config/Config";
 import ShoppingHeaderMobileMenu from './ShoppingHeaderMobileMenue';
-import { logoutUser } from "@/store/AuthSlice/AuthSlice";
+import { logoutUser } from "@/store/authSlice/AuthSlice";
 import  ProductCardDetails  from "./ProductCardDetail";
 import { fetchCardItems } from "@/store/shopSlice/ShopCardSlice";
 import { useNavigate } from "react-router-dom"; // Import navigation hook
