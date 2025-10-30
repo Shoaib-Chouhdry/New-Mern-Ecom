@@ -1,6 +1,6 @@
 import { useEffect} from 'react'
 
-import AuthLayout from './components/Auth/AuthLayout'
+import AuthLayout from './components/auth/AuthLayout'
 import { Route, Routes } from 'react-router-dom'
 import AuthLogin from './pages/Auth/Login'
 import AuthRegister from './pages/Auth/Register'
