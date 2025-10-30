@@ -5,7 +5,7 @@ import CartProvider from './components/shoppingView/CardContext'
 import './index.css'
 import App from './App.jsx'
 import { Provider } from 'react-redux'
-import store from './store/store.js'
+import store from './store/Store.js'
 import { ToastContainer } from "react-toastify";
 
 
