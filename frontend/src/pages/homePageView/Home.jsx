@@ -5,6 +5,7 @@ const Home =()=>{
    
     return(
         <>
+        <h1>hellothere</h1>
            <Navbar/>
            <MainBody/>
            <Footer/>
