@@ -107,7 +107,7 @@
     import { Link, useNavigate } from 'react-router-dom';
     import { useDispatch } from 'react-redux';
     import { ToastContainer, toast } from 'react-toastify';
-    import { loginUser } from '@/store/AuthSlice/AuthSlice';
+    import { loginUser } from '@/store/authSlice/AuthSlice';
     
     const SignUpForm = () => {
       const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
