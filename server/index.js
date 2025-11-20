@@ -51,9 +51,12 @@ app.use("/api/shop/product",ShopProductRoute)
 app.use("/api/shop/card",ShopCardRoute)
 app.use("/api/card",OrderRoute)
 
-app.get("/", (req, res) => {
-  res.send("Hello from Node.js backend!");
-});
+app.get("/",(request,response)=>{
+    ///server to client
+    response.json({
+        message : "Server is running " 
+    })
+})
 
 app.use(express.static(path.join(_dirname,'/frontend/dist')))
 
