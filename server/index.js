@@ -51,14 +51,16 @@ app.use("/api/shop/product",ShopProductRoute)
 app.use("/api/shop/card",ShopCardRoute)
 app.use("/api/card",OrderRoute)
 
-
-app.use(express.static(path.join(_dirname,'/frontend/dist')))
-app.get('*',(_,res) => {
-    res.sendFile(path.resolve(_dirname,'frontend','dist','index.html'));
-})
 app.get("/", (req, res) => {
   res.send("Hello from Node.js backend!");
 });
+
+app.use(express.static(path.join(_dirname,'/frontend/dist')))
+
+app.get('*',(_,res) => {
+    res.sendFile(path.resolve(_dirname,'frontend','dist','index.html'));
+})
+
 
 app.listen(PORT,()=>{
     console.log(`server is running on ${PORT}`)
